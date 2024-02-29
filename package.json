@@ -2,7 +2,6 @@
   "name": "task-manager",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://vladimirovn.github.io/task-manager/",
   "type": "module",
   "scripts": {
     "dev": "vite",
