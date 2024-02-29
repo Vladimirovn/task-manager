@@ -3,11 +3,12 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import './style.css'
 
-import { createRouter } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const pinia = createPinia()
 
 const router = createRouter({
+    history: createWebHistory(),
     routes: [
       { path: '/',
         name: 'main',
