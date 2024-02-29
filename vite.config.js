@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/task_manager",
+  base: "/task-manager",
   plugins: [vue()],
   resolve: {
     alias: {
