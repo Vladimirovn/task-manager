@@ -3,12 +3,11 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import './style.css'
 
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter } from 'vue-router'
 
 const pinia = createPinia()
 
 const router = createRouter({
-    history: createWebHistory(),
     routes: [
       { path: '/',
         name: 'main',
@@ -18,7 +17,6 @@ const router = createRouter({
         name: 'tasks',
         component: () => import('@/components/TaskPage.vue') 
       },
-      { path: '/:catchAll(.*)', component: NotFound },
     ]
 })
   
