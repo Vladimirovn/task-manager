@@ -18,6 +18,7 @@ const router = createRouter({
         name: 'tasks',
         component: () => import('@/components/TaskPage.vue') 
       },
+      { path: '/:catchAll(.*)', component: NotFound },
     ]
 })
   
