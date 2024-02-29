@@ -98,7 +98,3 @@
   }
   
 </style>
-
-<!-- {{ task }}
-          <button @click="editTask(index)">Редактировать</button>
-          <button @click="deleteTask(index)">Удалить</button> -->
