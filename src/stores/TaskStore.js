@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 export const useTaskStore = defineStore('taskStore', () => {
     const tasks = ref(JSON.parse(sessionStorage.getItem('tasks')) || []);
@@ -22,12 +22,6 @@ export const useTaskStore = defineStore('taskStore', () => {
         tasks.value.splice(index, 1);
         saveTasksToSessionStorage();
     };
-
-    onMounted(() => {
-        if (sessionStorage.getItem('tasks')) {
-            tasks.value = JSON.parse(sessionStorage.getItem('tasks'));
-        }
-    });
 
     return {
         tasks,
